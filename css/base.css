@@ -1,0 +1,41 @@
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.just-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.size12 {
+  font-size: 12px;
+}
+
+.size14 {
+  font-size: 14px;
+}
+
+.size16 {
+  font-size: 16px;
+}
+
+.size20 {
+  font-size: 20px;
+}
+
+.vh100 {
+  height: 100vh;
+}
