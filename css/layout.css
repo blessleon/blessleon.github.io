@@ -1,0 +1,137 @@
+/** @format */
+
+.header-glass,
+.feed-glass,
+.timeline-glass {
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 16px;
+  border: 2px solid rgba(237, 237, 237, 0.58);
+}
+.header-glass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px 16px 24px;
+  margin: 32px auto 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #fff3;
+  flex-shrink: 0;
+  background: #fff4;
+  object-fit: cover;
+}
+.header-glass h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #222b45;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.container {
+  display: flex;
+  gap: 32px;
+  margin: 32px auto;
+  max-width: 1100px;
+  width: 95%;
+}
+.feed-glass {
+  flex: 2;
+  padding: 32px 28px;
+  min-width: 0;
+}
+.timeline-glass {
+  flex: 1;
+  padding: 32px 22px;
+  min-width: 210px;
+  max-width: 320px;
+}
+/* Feed 样式 */
+.blog-post {
+  padding: 22px 0 20px 0;
+  border-bottom: 1px solid #eee5;
+}
+.blog-post:last-child {
+  border-bottom: none;
+}
+.blog-post h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.3rem;
+  color: #334e68;
+}
+.blog-post .date {
+  font-size: 0.92rem;
+  color: #7b8998;
+  margin-bottom: 10px;
+}
+.blog-post p {
+  color: #2d3748;
+  margin: 0 0 8px 0;
+}
+.blog-post a {
+  color: #2d6cdf;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Timeline 样式 */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.timeline li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.timeline .date {
+  background: #aeb8fe88;
+  color: #3950a1;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin-right: 12px;
+  min-width: 80px;
+  text-align: center;
+}
+.timeline .title {
+  color: #334e68;
+  font-size: 0.97rem;
+}
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .timeline-glass {
+    max-width: none;
+    min-width: 0;
+  }
+  .header-glass {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .header-glass {
+    padding: 18px 5px 12px 5px;
+  }
+  .feed-glass,
+  .timeline-glass {
+    padding: 12px 5px;
+  }
+}
