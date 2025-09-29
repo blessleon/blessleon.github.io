@@ -4,18 +4,188 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blesslon's blogs</title>
-    <meta name="description" content="Blesslon's blogs" />
-    <meta name="keywords" content="Blesslon, blogs" />
+    <title>Blessleon's Blog</title>
+    <meta name="description" content="Blessleon's blogs" />
+    <meta name="keywords" content="Blessleon, blogs" />
     <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
     <link href="./css/base.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      body {
+        background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', 'Arial', sans-serif;
+      }
+      .header-glass, .feed-glass, .timeline-glass {
+        background: rgba(255,255,255,0.22);
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border-radius: 16px;
+        border: 1px solid rgba(255,255,255,0.18);
+      }
+      .header-glass {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 24px 16px 24px;
+        margin: 32px auto 0 auto;
+        max-width: 700px;
+        width: 90%;
+      }
+      .avatar {
+        width: 64px; height: 64px;
+        border-radius: 50%;
+        margin-right: 20px;
+        border: 2px solid #fff3;
+        flex-shrink: 0;
+        background: #fff4;
+        object-fit: cover;
+      }
+      .header-glass h1 {
+        margin: 0;
+        font-size: 2rem;
+        color: #222b45;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      .container {
+        display: flex;
+        gap: 32px;
+        margin: 32px auto;
+        max-width: 1100px;
+        width: 95%;
+      }
+      .feed-glass {
+        flex: 2;
+        padding: 32px 28px;
+        min-width: 0;
+      }
+      .timeline-glass {
+        flex: 1;
+        padding: 32px 22px;
+        min-width: 210px;
+        max-width: 320px;
+      }
+      /* Feed 样式 */
+      .blog-post {
+        padding: 22px 0 20px 0;
+        border-bottom: 1px solid #eee5;
+      }
+      .blog-post:last-child {
+        border-bottom: none;
+      }
+      .blog-post h2 {
+        margin: 0 0 4px 0;
+        font-size: 1.3rem;
+        color: #334e68;
+      }
+      .blog-post .date {
+        font-size: 0.92rem;
+        color: #7b8998;
+        margin-bottom: 10px;
+      }
+      .blog-post p {
+        color: #2d3748;
+        margin: 0 0 8px 0;
+      }
+      .blog-post a {
+        color: #2d6cdf;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      /* Timeline 样式 */
+      .timeline {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .timeline li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      .timeline .date {
+        background: #aeb8fe88;
+        color: #3950a1;
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 4px 12px;
+        border-radius: 8px;
+        margin-right: 12px;
+        min-width: 80px;
+        text-align: center;
+      }
+      .timeline .title {
+        color: #334e68;
+        font-size: 0.97rem;
+      }
+      @media (max-width: 850px) {
+        .container {
+          flex-direction: column;
+          gap: 24px;
+        }
+        .timeline-glass {
+          max-width: none;
+          min-width: 0;
+        }
+        .header-glass {
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 10px;
+        }
+        .avatar {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+      @media (max-width: 480px) {
+        .header-glass {
+          padding: 18px 5px 12px 5px;
+        }
+        .feed-glass, .timeline-glass {
+          padding: 12px 5px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <main class="flex flex-center">
-      <button class="btn btn-primary" type="button">Blessleon</button>
-    </main>
+    <header class="header-glass">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/1640952?v=4" alt="Blessleon 头像" />
+      <h1>Blessleon's Blog</h1>
+    </header>
+    <div class="container">
+      <main class="feed-glass">
+        <article class="blog-post">
+          <h2>液态玻璃博客首页上线</h2>
+          <p class="date">20250929</p>
+          <p>博客首页采用 Glassmorphism 液态玻璃风格设计，包含头像、Feed流、时间线，支持响应式布局。</p>
+          <a href="#">阅读全文</a>
+        </article>
+        <article class="blog-post">
+          <h2>第二篇博客示例</h2>
+          <p class="date">20250825</p>
+          <p>这是另一篇博客的摘要内容。可在此处显示博客摘要，点击阅读全文进入详情页。</p>
+          <a href="#">阅读全文</a>
+        </article>
+        <!-- 更多博客... -->
+      </main>
+      <aside class="timeline-glass">
+        <ul class="timeline">
+          <li>
+            <span class="date">20250929</span>
+            <span class="title">液态玻璃博客首页上线</span>
+          </li>
+          <li>
+            <span class="date">20250825</span>
+            <span class="title">第二篇博客示例</span>
+          </li>
+          <!-- 更多时间线条目... -->
+        </ul>
+      </aside>
+    </div>
   </body>
 </html>
