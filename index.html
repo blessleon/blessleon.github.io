@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,14 +9,11 @@
     <title>Blessleon's Blog</title>
     <meta name="description" content="Blessleon's blogs" />
     <meta name="keywords" content="Blessleon, blogs" />
-    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-    <link href="./css/base.css" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" />
-    <link href="./css/layout.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
     <style>
       body {
-        background: url('https://images.unsplash.com/photo-1758351754305-fe00523aaefe?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+        background: url('') no-repeat center center fixed;
         background-size: cover;
         min-height: 100vh;
         margin: 0;
@@ -22,40 +21,14 @@
       }
     </style>
   </head>
+  <script src="https://cdn.tailwindcss.com"></script>
   <body>
-    <header class="header-glass">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/51091113?v=4" alt="Blessleon 头像" />
-      <h1>Blessleon's Blog</h1>
+    <header class="flex justify-center items-center pt-8">
+      <img class="w-16 h-16 rounded-full" src="https://avatars.githubusercontent.com/u/51091113?v=4" alt="Blessleon" />
+      <h1 class="pl-2 text-2xl text-shadow-2xs text-gray-800" id="rainbow-text">Blessleon's Blog</h1>
     </header>
-    <div class="container">
-      <main class="feed-glass">
-        <article class="blog-post">
-          <h2>液态玻璃博客首页上线</h2>
-          <p class="date">20250929</p>
-          <p>博客首页采用 Glassmorphism 液态玻璃风格设计，包含头像、Feed流、时间线，支持响应式布局。</p>
-          <a href="#">阅读全文</a>
-        </article>
-        <article class="blog-post">
-          <h2>第二篇博客示例</h2>
-          <p class="date">20250825</p>
-          <p>这是另一篇博客的摘要内容。可在此处显示博客摘要，点击阅读全文进入详情页。</p>
-          <a href="#">阅读全文</a>
-        </article>
-        <!-- 更多博客... -->
-      </main>
-      <aside class="timeline-glass">
-        <ul class="timeline">
-          <li>
-            <span class="date">20250929</span>
-            <span class="title">液态玻璃博客首页上线</span>
-          </li>
-          <li>
-            <span class="date">20250825</span>
-            <span class="title">第二篇博客示例</span>
-          </li>
-          <!-- 更多时间线条目... -->
-        </ul>
-      </aside>
-    </div>
+    <section class="flex justify-center pt-4  text-gray-200 text-lg text-shadow-2xs">
+      <a href="https://github.com/blessleon"><img class="w-8 h-8" src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" alt="https://github.com/blessleon" /></a>
+    </section>
   </body>
 </html>

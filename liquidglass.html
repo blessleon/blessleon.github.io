@@ -1,0 +1,62 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liquid Glass Effect</title>
+    <style>
+      body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb') no-repeat center/cover;
+          font-family: -apple-system, sans-serif;
+      }
+
+      .glass{
+        width: 300px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.119);
+        border-radius: 10px; /* Added border-radius for rounded corners */
+        position: relative; /* Added position for absolute positioning of child elements */
+        overflow: hidden; /* Ensures child elements do not overflow */
+      }
+
+      .glass-card {
+          width: 300px;
+          padding: 30px;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(20px) brightness(1.2);
+          -webkit-backdrop-filter: blur(20px) brightness(1.2);
+          border-radius: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+          color: white;
+          text-align: center;
+          filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+          transition: all 0.3s;
+      }
+
+      .glass-card:hover {
+          backdrop-filter: blur(20px) brightness(2);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.144);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glass glass-card">
+      <h2>Liquid Glass</h2>
+      <p>iOS 26 Style with CSS</p>
+      <svg width="300" height="100">
+        <filter id="liquid-glass">
+          <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </svg>
+    </div>
+  </body>
+  <script></script>
+</html>

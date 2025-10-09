@@ -1,0 +1,34 @@
+/** @format */
+
+#rainbow-text {
+  display: inline;
+  white-space: pre;
+}
+::highlight(rainbow-color-1) {
+  color: red;
+  
+}
+::highlight(rainbow-color-2) {
+  color: orange;
+  
+}
+::highlight(rainbow-color-3) {
+  color: yellow;
+  
+}
+::highlight(rainbow-color-4) {
+  color: green;
+  
+}
+::highlight(rainbow-color-5) {
+  color: blue;
+  
+}
+::highlight(rainbow-color-6) {
+  color: indigo;
+  
+}
+::highlight(rainbow-color-7) {
+  color: violet;
+  
+}
