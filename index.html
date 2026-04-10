@@ -1,21 +1,305 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blesslon's blogs</title>
-    <meta name="description" content="Blesslon's blogs" />
-    <meta name="keywords" content="Blesslon, blogs" />
-    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <title>Blessleon - 开发者作品集</title>
+    <meta name="description" content="Blessleon的个人主页 - 开发者作品集与项目展示" />
+    <meta name="keywords" content="Blessleon, 开发者, 作品集, 项目, 编程, GitHub" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link href="./css/base.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="./css/enhancements.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
-  <body>
-    <main class="flex flex-center">
-      <button class="btn btn-primary" type="button">Blessleon</button>
-    </main>
+  <body class="fg-color bg-color">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <span class="logo-text">Blessleon</span>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link">首页</a>
+          <a href="#projects" class="nav-link">项目</a>
+          <a href="#skills" class="nav-link">技能</a>
+          <a href="#contact" class="nav-link">联系</a>
+        </div>
+        <div class="theme-toggle">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+      </nav>
+
+      <main>
+        <section id="home" class="hero">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                <span class="greeting">你好，我是</span>
+                <span class="name">Blessleon</span>
+              </h1>
+              <p class="hero-subtitle typing-effect">前端开发者 & 创意编程爱好者</p>
+              <p class="hero-description">
+                专注于现代Web开发，热爱创造优秀的用户体验和高效的代码解决方案。 在这里分享我的项目作品和技术探索。
+              </p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">查看项目</a>
+                <a href="#contact" class="btn btn-secondary">联系我</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="code-animation">
+                <div class="code-line">interface Developer {</div>
+                <div class="code-line">&nbsp;&nbsp;passion: <span class="passion">string</span>;</div>
+                <div class="code-line">&nbsp;&nbsp;creativity: <span class="creativity">number</span>;</div>
+                <div class="code-line">&nbsp;&nbsp;innovation: <span class="innovation">boolean</span>;</div>
+                <div class="code-line">}</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="projects">
+          <div class="section-header">
+            <h2 class="section-title">项目作品集</h2>
+            <p class="section-subtitle">我最近在关注的技术项目</p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3 class="project-title">Astron RPA</h3>
+              <p class="project-description">RPA 平台开发</p>
+              <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/iflytek/astron-rpa" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/iflytek/astron-rpa/" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="project-title">Astron RPA Browser Plugin</h3>
+              <p class="project-description">RPA 浏览器插件开发</p>
+              <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Chrome Extension</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/iflytek/astron-rpa/tree/main/frontend/packages/browser-plugin" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/iflytek/astron-rpa/tree/main/frontend/packages/browser-plugin" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="project-title">项目三</h3>
+              <p class="project-description">开源工具库开发</p>
+              <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Rollup</span>
+                <span class="tag">Jest</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="skills">
+          <div class="section-header">
+            <h2 class="section-title">技术栈</h2>
+            <p class="section-subtitle">我熟悉的技术和工具</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="skill-category-title">前端开发</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <div class="skill-info">
+                    <span>HTML5</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="95"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <div class="skill-info">
+                    <span>CSS3</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="90"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js"></i>
+                  <div class="skill-info">
+                    <span>JavaScript</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="85"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <div class="skill-info">
+                    <span>React</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="80"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-vuejs"></i>
+                  <div class="skill-info">
+                    <span>Vue.js</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="75"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">后端开发</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-node"></i>
+                  <div class="skill-info">
+                    <span>Node.js</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="70"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-python"></i>
+                  <div class="skill-info">
+                    <span>Python</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="65"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <div class="skill-info">
+                    <span>MongoDB</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="60"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <div class="skill-info">
+                    <span>MySQL</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="65"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="skill-category-title">工具与其他</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <div class="skill-info">
+                    <span>Git</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="85"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-figma"></i>
+                  <div class="skill-info">
+                    <span>Figma</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="70"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-docker"></i>
+                  <div class="skill-info">
+                    <span>Docker</span>
+                    <div class="skill-progress">
+                      <div class="skill-bar" data-progress="50"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="section-header">
+            <h2 class="section-title">联系我</h2>
+            <p class="section-subtitle">让我们一起创造些有趣的东西</p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:blessleon@163.com">blessleon@163.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/blessleon" target="_blank">github.com/blessleon</a>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/blessleon" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link weixin-link" target="_blank">
+                <i class="fa-brands fa-weixin"></i>
+                <div class="weixin-qr">
+                  <img src="./images/weixin-qr.png" alt="微信二维码" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2026 Blessleon. 用 ❤️ 和代码构建</p>
+      </footer>
+    </div>
+
+    <script src="./js/particles.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
