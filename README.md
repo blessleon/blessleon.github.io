@@ -1,3 +1,2 @@
-# blessleon.github.io
-blog repo
-我的主页仓库
+# 我的主页
+[https://blessleon.github.io](https://blessleon.github.io)

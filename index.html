@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blessleon - 开发者作品集</title>
+    <title>Blessleon - 个人主页</title>
     <meta name="description" content="Blessleon的个人主页 - 开发者作品集与项目展示" />
     <meta name="keywords" content="Blessleon, 开发者, 作品集, 项目, 编程, GitHub" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/51091113.jpg" type="image/jpeg" />
     <link href="./css/base.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/enhancements.css" rel="stylesheet" />
+    <link href="./css/glass.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body class="fg-color bg-color">
     <div class="container">
       <nav class="navbar">
         <div class="nav-brand">
-          <span class="logo-text">Blessleon</span>
+          <img src="./images/51091113.jpg" alt="Blessleon" class="logo" />
         </div>
         <div class="nav-links">
           <a href="#home" class="nav-link">首页</a>
@@ -69,9 +70,11 @@
               <div class="project-icon">
                 <i class="fas fa-rocket"></i>
               </div>
-              <h3 class="project-title">Astron RPA</h3>
-              <p class="project-description">RPA 平台开发</p>
+              <h3 class="project-title">开源RPA平台</h3>
+              <p class="project-description">基于Electron/Tauri的开源RPA 平台开发</p>
               <div class="project-tags">
+                <span class="tag">RPA</span>
+                <span class="tag">Electron/Tauri</span>
                 <span class="tag">TypeScript</span>
                 <span class="tag">Vue.js</span>
                 <span class="tag">Python</span>
@@ -88,19 +91,26 @@
 
             <div class="project-card">
               <div class="project-icon">
-                <i class="fas fa-mobile-alt"></i>
+                <i class="fa-brands fa-chrome"></i>
               </div>
-              <h3 class="project-title">Astron RPA Browser Plugin</h3>
+              <h3 class="project-title">RPA Browser Plugin</h3>
               <p class="project-description">RPA 浏览器插件开发</p>
               <div class="project-tags">
+                <span class="tag">RPA</span>
                 <span class="tag">TypeScript</span>
                 <span class="tag">Chrome Extension</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/iflytek/astron-rpa/tree/main/frontend/packages/browser-plugin" class="project-link">
+                <a
+                  href="https://github.com/iflytek/astron-rpa/tree/main/frontend/packages/browser-plugin"
+                  class="project-link"
+                >
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="https://github.com/iflytek/astron-rpa/tree/main/frontend/packages/browser-plugin" class="project-link">
+                <a
+                  href="https://github.com/iflytek/astron-rpa/tree/main/frontend/packages/browser-plugin"
+                  class="project-link"
+                >
                   <i class="fas fa-external-link-alt"></i>
                 </a>
               </div>
@@ -108,14 +118,58 @@
 
             <div class="project-card">
               <div class="project-icon">
-                <i class="fas fa-code"></i>
+                <i class="fas fa-table"></i>
               </div>
-              <h3 class="project-title">项目三</h3>
-              <p class="project-description">开源工具库开发</p>
+              <h3 class="project-title">Python 数据表格能力</h3>
+              <p class="project-description">基于装饰器生成JSON描述的数据表格处理工具</p>
               <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">装饰器</span>
+                <span class="tag">JSON</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/blessleon/python-data-table" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/blessleon/python-data-table" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fa-regular fa-house"></i>
+              </div>
+              <h3 class="project-title">Nuxt3 SSR 官网</h3>
+              <p class="project-description">基于Nuxt3的服务端渲染官网，Lighthouse性能评分90+</p>
+              <div class="project-tags">
+                <span class="tag">Nuxt3</span>
+                <span class="tag">SSR</span>
                 <span class="tag">TypeScript</span>
-                <span class="tag">Rollup</span>
-                <span class="tag">Jest</span>
+                <span class="tag">Lighthouse 90+</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fab fa-weixin"></i>
+              </div>
+              <h3 class="project-title">Uniapp 微信小程序</h3>
+              <p class="project-description">基于Uniapp开发的微信小程序，用于分期业务办理</p>
+              <div class="project-tags">
+                <span class="tag">Uniapp</span>
+                <span class="tag">微信小程序</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">分期业务</span>
               </div>
               <div class="project-links">
                 <a href="#" class="project-link">
@@ -216,15 +270,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="skill-item">
-                  <i class="fas fa-database"></i>
-                  <div class="skill-info">
-                    <span>MySQL</span>
-                    <div class="skill-progress">
-                      <div class="skill-bar" data-progress="65"></div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -241,20 +286,11 @@
                   </div>
                 </div>
                 <div class="skill-item">
-                  <i class="fab fa-figma"></i>
+                  <i class="fab fa-vite"></i>
                   <div class="skill-info">
-                    <span>Figma</span>
+                    <span>Vite</span>
                     <div class="skill-progress">
                       <div class="skill-bar" data-progress="70"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-docker"></i>
-                  <div class="skill-info">
-                    <span>Docker</span>
-                    <div class="skill-progress">
-                      <div class="skill-bar" data-progress="50"></div>
                     </div>
                   </div>
                 </div>
